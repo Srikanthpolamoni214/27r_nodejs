@@ -6,9 +6,9 @@ let obj ={
 }
 const server = http.createServer((req, res) => {
   res.writeHead(201,"hiii srikanth",{"content-type":"application/json"})
-    res.write(obj);
+    res.write(JSON.stringify(obj));
   res.end("");
 });
-server.listen("4100",()=>{
+server.listen("3100",()=>{
   console.log("server is running")
 })
