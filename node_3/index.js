@@ -9,6 +9,6 @@ const server = http.createServer((req, res) => {
     res.write(obj);
   res.end("");
 });
-server.listen("4101",()=>{
+server.listen("4100",()=>{
   console.log("server is running")
 })
