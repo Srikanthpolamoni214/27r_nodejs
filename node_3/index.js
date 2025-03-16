@@ -1,7 +1,13 @@
 const http = require("http");
+let obj ={
+  name:"srikanth",
+  id:1,
+  city:"Hyderabad"
+}
 const server = http.createServer((req, res) => {
-    res.write("hello world");
-  res.end("reponse provided");
+  res.writeHead(201,"hii srikanth",{content:"application/json"})
+    res.write(obj);
+  res.end("");
 });
 server.listen("4101",()=>{
   console.log("server is running")
