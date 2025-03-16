@@ -5,7 +5,7 @@ let obj ={
   city:"Hyderabad"
 }
 const server = http.createServer((req, res) => {
-  res.writeHead(201,"hiii srikanth",{content:"application/json"})
+  res.writeHead(201,"hiii srikanth",{"content-type":"application/json"})
     res.write(obj);
   res.end("");
 });
